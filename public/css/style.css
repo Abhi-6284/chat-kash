@@ -95,8 +95,6 @@ body {
     border: none;
 }
 
-.btn img {}
-
 .form_contant {
     display: flex;
     justify-content: space-between;
