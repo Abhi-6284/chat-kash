@@ -10,7 +10,7 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.css")
     body(style=`text-align: -webkit-center;
 `)
-        nav
+        nav.title-fix
             // <img class="logo" src="index.png">
             h1.title Chat Kash
         .main-container
@@ -18,6 +18,6 @@ html(lang="en")
             .send
                 form#send-container(action="#")
                     div(class="form_contant")
-                        input#messageInp(type="text", name="messageInp", placeholder="Type a message...")
+                        input#messageInp(type="text", name="messageInp", placeholder="Type a message..." required="required")
                         button.btn(type="submit")
                             img(src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/null/external-send-social-media-ui-tanah-basah-glyph-tanah-basah.png")
