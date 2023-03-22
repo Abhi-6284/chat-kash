@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = 9846;
+const port = 8524;
 const http = require('http').Server(app)
 
 app.set('view engine', 'ejs')
