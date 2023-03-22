@@ -2,18 +2,18 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = 9845;
+const port = 4562;
 const http = require('http').Server(app)
+console.log(port);
+// console.log(Math.floor(Math.random() * 10000)+1000);
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
 
 // Require static assets from public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', (req, res, next) => {
-    // console.log(res.render);
-    // res.redirect('/index')
     res.render('chat', {
         title: 'Welcome'
     })
